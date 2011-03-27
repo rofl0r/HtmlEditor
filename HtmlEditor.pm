@@ -12,7 +12,7 @@ use warnings;
 use Gtk2 -init;
 use Gtk2::WebKit;
 use File::Slurp;
-use Data::Dumper;
+
 our @ISA = qw(Gtk2::Window);
 
 sub new {
