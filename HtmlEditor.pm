@@ -251,7 +251,7 @@ sub on_open {
 		my $fn = $dialog->get_filename();
 		if (-e $fn) {
 			$self->{filename} = $fn;
-			$self->editor->load_html_string(read_file($fn), "file:///");
+			$self->{editor}->load_html_string(read_file($fn), "file:///");
 		}
 	}
 	$dialog->destroy();
